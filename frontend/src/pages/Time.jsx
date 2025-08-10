@@ -76,7 +76,7 @@ function Time() {
 
   return (
     <header className={styles.headerContainer}>
-  <h2 className={styles.welcomeText}>Welcome {user?.name}</h2>
+  <h2 className={styles.welcomeText}>Welcome, {user?.name}</h2>
   <div style={{ textAlign: "center" }}>
     <p className={styles.title}>My Personal Dashboard</p>
     <span className={styles.time}>

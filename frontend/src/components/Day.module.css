@@ -1,24 +1,25 @@
-/* Day card container - matching Priority theme */
+/* Day card container - light mode */
 .dayCard {
-  background-color: #212121;
+  background-color: #f9f9f9; /* light gray background */
   border-radius: 8px;
   padding: 20px;
-  color: #ffffff;
+  color: #222222; /* dark text */
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
   height: fit-content;
   display: flex;
   flex-direction: column;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Day title - matching Priority heading */
+/* Day title */
 .dayTitle {
   font-size: 18px;
   font-weight: 600;
   margin: 0 0 16px 0;
-  color: #ffffff;
+  color: #222222;
 }
 
-/* Task list - matching Priority list */
+/* Task list */
 .taskList {
   list-style: none;
   padding: 0;
@@ -26,12 +27,12 @@
   flex-grow: 1;
 }
 
-/* Task list items - matching Priority list items */
+/* Task list items */
 .taskItem {
   display: flex;
   align-items: center;
   padding: 12px 0;
-  border-bottom: 1px solid #333333;
+  border-bottom: 1px solid #ddd;
   gap: 12px;
 }
 
@@ -39,32 +40,32 @@
   border-bottom: none;
 }
 
-/* Checkbox styling - matching Priority checkboxes */
+/* Checkbox styling */
 .taskItem input[type="checkbox"] {
   width: 18px;
   height: 18px;
-  accent-color: hsl(198.4 93.2% 59.6%);
+  accent-color: hsl(210, 100%, 56%); /* blue accent */
   cursor: pointer;
   margin: 0;
   flex-shrink: 0;
 }
 
-/* Task text - matching Priority text */
+/* Task text */
 .taskItem span {
   flex: 1;
   font-size: 14px;
-  color: #ffffff;
+  color: #222222;
   transition: all 0.2s ease;
   word-wrap: break-word;
 }
 
-/* Completed task styling - matching Priority completed */
+/* Completed task styling */
 .completed {
   text-decoration: line-through !important;
-  color: #888888 !important;
+  color: #999999 !important;
 }
 
-/* Delete button - matching Priority delete */
+/* Delete button */
 .deleteBtn {
   background: none;
   border: none;
@@ -79,11 +80,11 @@
 }
 
 .deleteBtn:hover {
-  background-color: #333333;
-  color: #ffffff;
+  background-color: #eee;
+  color: #444444;
 }
 
-/* Add task form - matching Priority form */
+/* Add task form */
 .addForm {
   display: flex;
   gap: 8px;
@@ -91,37 +92,37 @@
   margin-top: auto;
 }
 
-/* Input field - matching Priority input */
+/* Input field */
 .taskInput {
   flex: 1;
-  background-color: #2a2a2a;
-  border: 1px solid #444444;
+  background-color: #fff;
+  border: 1px solid #ccc;
   border-radius: 6px;
   padding: 10px 12px;
   font-size: 14px;
-  color: #ffffff;
+  color: #222222;
   outline: none;
   transition: border-color 0.2s ease;
   min-width: 0;
 }
 
 .taskInput::placeholder {
-  color: #888888;
+  color: #aaa;
 }
 
 .taskInput:focus {
-  border-color: #4a9eff;
-  box-shadow: 0 0 0 2px rgba(74, 158, 255, 0.2);
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
 }
 
-/* Add button - matching Priority add button */
+/* Add button */
 .addBtn {
-  background-color: #4a4a4a;
-  border: 1px solid #666666;
+  background-color: #e0e0e0;
+  border: 1px solid #ccc;
   border-radius: 6px;
   padding: 10px 16px;
   font-size: 14px;
-  color: #ffffff;
+  color: #222222;
   cursor: pointer;
   transition: all 0.2s ease;
   font-weight: 500;
@@ -129,10 +130,10 @@
 }
 
 .addBtn:hover {
-  background-color: #5a5a5a;
-  border-color: #777777;
+  background-color: #d0d0d0;
+  border-color: #bbb;
 }
 
 .addBtn:active {
-  background-color: #3a3a3a;
+  background-color: #c0c0c0;
 }

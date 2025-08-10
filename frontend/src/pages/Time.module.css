@@ -1,8 +1,8 @@
 .headerContainer {
-  background-color: #262626;
+  background-color: #f5f5f5; /* light gray background */
   padding: 6px 20px; /* reduced padding for smaller height */
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
-  color: #f5f5f5;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  color: #333333;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -11,8 +11,8 @@
 /* Left section */
 .welcomeText {
   font-size: 1rem; /* slightly smaller */
-  font-weight: 500;
-  color: #d4d4d4;
+  font-weight: bold;
+  color: black;
   margin: 0;
 }
 
@@ -26,18 +26,19 @@
   font-size: 1.2rem; /* reduced */
   font-weight: 600;
   margin: 0;
+  color: #222222;
 }
 
 .time {
   font-size: 0.8rem; /* smaller */
-  color: #a3a3a3;
+  color: #888888;
 }
 
 /* Right section */
 .logoutButton {
   padding: 4px 10px; /* smaller button */
-  background-color: #404040;
-  color: #f5f5f5;
+  background-color: #e0e0e0;
+  color: #333333;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -45,5 +46,5 @@
 }
 
 .logoutButton:hover {
-  background-color: #525252;
+  background-color: #cccccc;
 }

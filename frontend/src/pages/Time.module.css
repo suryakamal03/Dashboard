@@ -1,0 +1,49 @@
+.headerContainer {
+  background-color: #262626;
+  padding: 6px 20px; /* reduced padding for smaller height */
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
+  color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Left section */
+.welcomeText {
+  font-size: 1rem; /* slightly smaller */
+  font-weight: 500;
+  color: #d4d4d4;
+  margin: 0;
+}
+
+/* Center section */
+.centerSection {
+  text-align: center;
+  flex: 1;
+}
+
+.title {
+  font-size: 1.2rem; /* reduced */
+  font-weight: 600;
+  margin: 0;
+}
+
+.time {
+  font-size: 0.8rem; /* smaller */
+  color: #a3a3a3;
+}
+
+/* Right section */
+.logoutButton {
+  padding: 4px 10px; /* smaller button */
+  background-color: #404040;
+  color: #f5f5f5;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.logoutButton:hover {
+  background-color: #525252;
+}

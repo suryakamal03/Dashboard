@@ -11,7 +11,7 @@ function Priority() {
                 const token = localStorage.getItem("userToken");
                 if (!token) return;
 
-                const response = await fetch("http://localhost:5000/api/priority", {
+                const response = await fetch("https://dashboard-6ay3.onrender.com/api/priority", {
                     method: "GET",
                     headers: {
                         "Authorization": `Bearer ${token}`
@@ -35,7 +35,7 @@ function Priority() {
 
         try {
             const token = localStorage.getItem("userToken");
-            const response = await fetch("http://localhost:5000/api/priority", {
+            const response = await fetch("https://dashboard-6ay3.onrender.com/api/priority", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -57,7 +57,7 @@ function Priority() {
     const deleteItem = async (id) => {
         try {
             const token = localStorage.getItem("userToken");
-            await fetch(`http://localhost:5000/api/priority/${id}`, {
+            await fetch(`https://dashboard-6ay3.onrender.com/api/priority/${id}`, {
                 method: "DELETE",
                 headers: {
                     "Authorization": `Bearer ${token}`
@@ -76,7 +76,7 @@ function Priority() {
             if (!itemToUpdate) return;
 
             const token = localStorage.getItem("userToken");
-            await fetch(`http://localhost:5000/api/priority/${id}`, {
+            await fetch(`https://dashboard-6ay3.onrender.com/api/priority/${id}`, {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json",

@@ -17,7 +17,7 @@ function Dashboard() {
       return;
     }
 
-    fetch("http://localhost:5000/api/auth/verify", {
+    fetch("https://dashboard-6ay3.onrender.com/api/auth/verify", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -47,7 +47,7 @@ function Dashboard() {
 
   return (
     <>
-      
+
       <Time />
       <Priority />
       <Daily />

@@ -9,7 +9,7 @@ function Login(){
   async function signin(e){
     e.preventDefault();
     if(email.length > 0 && password.length > 0){
-      const response = await fetch('http://localhost:5000/api/auth/login',{
+      const response = await fetch('https://dashboard-6ay3.onrender.com/api/auth/login',{
         method:'POST',
         headers:{
           'Content-type':'application/json'

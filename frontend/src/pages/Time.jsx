@@ -21,7 +21,7 @@ function Time() {
       return;
     }
 
-    fetch("http://localhost:5000/api/auth/verify", {
+    fetch("https://dashboard-6ay3.onrender.com/api/auth/verify", {
       headers: {
         Authorization: `Bearer ${token}`
       }

@@ -10,7 +10,7 @@ function Day({ day }) {
       try {
         const token = localStorage.getItem('userToken');
         if (!token) return;
-        const response = await fetch(`http://localhost:5000/api/day/${day}`, {
+        const response = await fetch(`https://dashboard-6ay3.onrender.com/api/day/${day}`, {
           headers: { 'Authorization': `Bearer ${token}` }
         });
         if (!response.ok) throw new Error(`Failed to fetch tasks for ${day}`);
@@ -28,7 +28,7 @@ function Day({ day }) {
     if (!inputText.trim()) return;
     try {
       const token = localStorage.getItem('userToken');
-      const response = await fetch(`http://localhost:5000/api/day/${day}`, {
+      const response = await fetch(`https://dashboard-6ay3.onrender.com/api/day/${day}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -51,7 +51,7 @@ function Day({ day }) {
   const deleteTask = async (id) => {
     try {
       const token = localStorage.getItem('userToken');
-      await fetch(`http://localhost:5000/api/day/${id}`, {
+      await fetch(`https://dashboard-6ay3.onrender.com/api/day/${id}`, {
         method: 'DELETE',
         headers: { 'Authorization': `Bearer ${token}` }
       });
@@ -64,7 +64,7 @@ function Day({ day }) {
   const toggleComplete = async (id) => {
     try {
       const token = localStorage.getItem('userToken');
-      await fetch(`http://localhost:5000/api/day/${id}`, {
+      await fetch(`https://dashboard-6ay3.onrender.com/api/day/${id}`, {
         method: 'PUT',
         headers: { 'Authorization': `Bearer ${token}` }
       });

@@ -13,7 +13,7 @@ function Register() {
     e.preventDefault();
     try{
     if (name.trim().length > 0 && email.trim().length > 0 && password.trim().length > 0){
-      const response = await fetch('http://localhost:5000/api/auth/register',{
+      const response = await fetch('https://dashboard-6ay3.onrender.com/api/auth/register',{
         method:'POST',
         headers:{
           'Content-type': 'application/json'

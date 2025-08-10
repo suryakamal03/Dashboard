@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Time from "./Time.jsx";
-import Priority from "./priority.jsx";
+import Priority from "./Priority.jsx";
 import Daily from "./Daily.jsx";
 
 function Dashboard() {
